@@ -1,14 +1,14 @@
 import React, {FC} from 'react'
 import s from './Header.module.scss'
-import {Navigation} from "./navigation/Navigation";
 import {LogoLink} from "./logoLink/LogoLink";
+import {NavBlock} from "../secondary/navBlock/NavBlock";
 
 export const Header: FC = () => {
 
   return (
     <header className={s.header}>
       <LogoLink/>
-      <Navigation/>
+      <NavBlock className={s.headerNav}/>
     </header>
   )
 }

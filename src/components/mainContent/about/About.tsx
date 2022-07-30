@@ -1,6 +1,6 @@
 import React, {FC} from 'react'
 import s from './About.module.scss'
-import {PageTitle} from "../../secondary/pageTitle/PageTitle";
+import {PageTitle} from "../../secondary/mainPageTitle/PageTitle";
 
 export const About: FC = () => {
   /*  const count = useAppSelector(selectCount)

@@ -1,0 +1,18 @@
+@import '../../../style/vars';
+
+.footerInfo {
+  width: 100%;
+  height: 60px;
+  padding: 0 16%;
+  @include flexRow;
+  border: 1px solid gray;
+
+  p {
+    color: $darkgrey;
+    @include upperCaseSimpleText;
+  }
+
+  .footerNav {
+    @include upperCaseSimpleText;
+  }
+}

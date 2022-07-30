@@ -1,6 +1,6 @@
 import React, {FC} from 'react'
 import s from './Work.module.scss'
-import {PageTitle} from "../../secondary/pageTitle/PageTitle";
+import {PageTitle} from "../../secondary/mainPageTitle/PageTitle";
 
 export const Work: FC = () => {
   /*  const count = useAppSelector(selectCount)

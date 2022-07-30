@@ -9,6 +9,7 @@
 
   h1 {
     margin-left: 16%;
-    @include pageTitleText;
+    font-size: 30px;
+    @include titleText;
   }
 }

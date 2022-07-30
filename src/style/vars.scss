@@ -11,14 +11,35 @@ $white: #ffffff;
   font-size: 18px;
   color: $fontColor;
 }
-
-@mixin pageTitleText {
+@mixin upperCaseSimpleText {
   font-family: Novecent, sans-serif;
-  font-size: 30px;
+  font-size: 12px;
+}
+
+@mixin titleText {
+  font-family: Novecent, sans-serif;
   color: $white;
 }
+
 @mixin navText {
   font-family: Novecent, sans-serif;
   font-size: 18px;
   transition: 0.3s;
+}
+
+@mixin button {
+  height: 40px;
+  font-family: Novecent, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: center;
+  color: $white;
+  cursor: pointer;
+  background-color: $green;
+}
+
+@mixin flexRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
