@@ -1,5 +1,6 @@
 import React, {FC} from 'react'
 import s from './Work.module.scss'
+import {PageTitle} from "../../secondary/pageTitle/PageTitle";
 
 export const Work: FC = () => {
   /*  const count = useAppSelector(selectCount)
@@ -7,6 +8,7 @@ export const Work: FC = () => {
 
   return (
     <div className={s.work}>
+      <PageTitle titleText='CHECK OUT WHAT I CAN DO'/>
       Work
     </div>
   )

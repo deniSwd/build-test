@@ -1,4 +1,6 @@
+@import '../../../style/vars';
 .home {
   display: flex;
   justify-content: center;
+  @include simpleText;
 }

@@ -6,9 +6,9 @@ import {LogoLink} from "./logoLink/LogoLink";
 export const Header: FC = () => {
 
   return (
-    <div className={s.header}>
+    <header className={s.header}>
       <LogoLink/>
       <Navigation/>
-    </div>
+    </header>
   )
 }

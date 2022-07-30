@@ -3,7 +3,8 @@ import {createRoot} from 'react-dom/client'
 import {Provider} from 'react-redux'
 import {store} from './store/store'
 import reportWebVitals from './reportWebVitals'
-import './index.css'
+import './style/reset.css'
+import './style/fonts.css'
 import {App} from "./App";
 import {BrowserRouter} from "react-router-dom";
 

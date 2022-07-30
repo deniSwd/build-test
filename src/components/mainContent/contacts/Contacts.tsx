@@ -1,5 +1,6 @@
 import React, {FC} from 'react'
 import s from './Contacts.module.scss'
+import {PageTitle} from "../../secondary/pageTitle/PageTitle";
 
 export const Contacts: FC = () => {
   /*  const count = useAppSelector(selectCount)
@@ -7,6 +8,7 @@ export const Contacts: FC = () => {
 
   return (
     <div className={s.contacts}>
+      <PageTitle titleText='GOT A QUESTION OR INQUIRY?'/>
       Contacts
     </div>
   )

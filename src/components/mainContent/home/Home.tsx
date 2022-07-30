@@ -7,7 +7,7 @@ export const Home: FC = () => {
 
   return (
     <div className={s.home}>
-      Home
+      Home gdsf fdhgddz dzgazfga zdsgsdzgsdzgh sadasdsadasdassa fdgdffgsd.
     </div>
   )
 }

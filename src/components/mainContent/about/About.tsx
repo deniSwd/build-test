@@ -1,5 +1,6 @@
 import React, {FC} from 'react'
 import s from './About.module.scss'
+import {PageTitle} from "../../secondary/pageTitle/PageTitle";
 
 export const About: FC = () => {
   /*  const count = useAppSelector(selectCount)
@@ -7,6 +8,7 @@ export const About: FC = () => {
 
   return (
     <div className={s.about}>
+      <PageTitle titleText='ABOUT MY BUSSINES'/>
       About
     </div>
   )

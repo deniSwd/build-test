@@ -5,10 +5,10 @@ import {NavItem} from "./navItem/NavItem";
 export const Navigation: FC = () => {
   return (
     <div className={s.navigation}>
-      <NavItem text='Home' path='/'/>
-      <NavItem text='About' path='/about'/>
-      <NavItem text='Work' path='/work'/>
-      <NavItem text='Contacts' path='/contacts'/>
+      <NavItem text='HOME' path='/'/>
+      <NavItem text='ABOUT' path='/about'/>
+      <NavItem text='WORK' path='/work'/>
+      <NavItem text='CONTACT' path='/contacts'/>
     </div>
   )
 }

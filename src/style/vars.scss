@@ -1,0 +1,24 @@
+$gray: #dadada;
+$darkgrey: #737373;
+$green: #2ecc71;
+$dark: #322f2f;
+$fontColor: #a5a5a5;
+$iconsHover: #00bbf5;
+$white: #ffffff;
+
+@mixin simpleText {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: $fontColor;
+}
+
+@mixin pageTitleText {
+  font-family: Novecent, sans-serif;
+  font-size: 30px;
+  color: $white;
+}
+@mixin navText {
+  font-family: Novecent, sans-serif;
+  font-size: 18px;
+  transition: 0.3s;
+}

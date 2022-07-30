@@ -9,7 +9,7 @@ type NavItemProps = {
 
 export const NavItem: FC<NavItemProps> = ({text, path}) => {
   return (
-    <NavLink to={path} className={s.navItem}>
+    <NavLink to={path} className={({isActive}) => isActive ? s.activeNav : s.navItem}>
       {text}
     </NavLink>
   )

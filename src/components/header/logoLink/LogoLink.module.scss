@@ -1,5 +1,9 @@
 .logoLink {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  border-bottom: 1px solid #dadada;
 
   .logo {
 
@@ -7,5 +11,6 @@
 
   .links {
     display: flex;
-    }
+    justify-content: end;
+  }
 }

@@ -1,0 +1,12 @@
+@import '../../../../style/vars';
+
+.navItem {
+  margin-right: 3.5%;
+  color: $darkgrey;
+  @include navText;
+}
+.activeNav {
+  margin-right: 3.5%;
+  color: $green;
+  @include navText;
+}
