@@ -1,4 +1,7 @@
+@import '../../../../style/vars';
+
 .video {
   grid-area: video;
-  border: 1px solid lightgray;
+  height: 320px;
+  background-color: $lightGrey;
 }

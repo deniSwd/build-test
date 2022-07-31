@@ -3,8 +3,11 @@ import s from './Video.module.scss'
 
 export const Video:FC = () =>{
   return(
-    <div className={s.video}>
-      video
-    </div>
+    <section className={s.video}>
+      <div className={s.preview}>
+        preview
+      </div>
+      <div className={s.description}></div>
+    </section>
   )
 }

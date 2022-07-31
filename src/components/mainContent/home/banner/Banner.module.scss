@@ -1,10 +1,47 @@
+@import '../../../../style/vars';
+
 .banner {
+  position: relative;
   display: grid;
   grid-area: banner;
   justify-items: center;
   align-items: center;
-  border: 1px solid lightgray;
-  p {
 
+  .bannerInfo {
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    grid-template-rows: 1fr 115px;
+    height: 270px;
+
+    p {
+      text-align: center;
+      max-width: 735px;
+      color: $gray;
+      @include upperCaseSimpleText;
+    }
+
+    .bannerButton {
+      width: 185px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .animateImg1 {
+    position: absolute;
+    bottom: 205px;
+    right:22%;
+  }
+
+  .animateImg2 {
+    position: absolute;
+    bottom: 205px;
+    right:25%;
+  }
+
+  .animateImg3 {
+    position: absolute;
+    bottom: 205px;
+    right:35%;
   }
 }
