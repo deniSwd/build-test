@@ -1,6 +1,8 @@
 @import '../../../style/vars';
+
 .home {
-  display: flex;
-  justify-content: center;
-  @include simpleText;
+  display: grid;
+  grid-template-areas: 'banner'
+                       'video'
+                       'slider';
 }

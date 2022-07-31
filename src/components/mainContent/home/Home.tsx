@@ -1,13 +1,18 @@
 import React, {FC} from 'react'
 import s from './Home.module.scss'
+import {Banner} from "./banner/Banner";
+import {Video} from "./video/Video";
+import {Slider} from "./slider/Slider";
 
 export const Home: FC = () => {
   /*  const count = useAppSelector(selectCount)
     const dispatch = useAppDispatch()*/
 
   return (
-    <div className={s.home}>
-      Home gdsf fdhgddz dzgazfga zdsgsdzgsdzgh sadasdsadasdassa fdgdffgsd.
-    </div>
+    <main className={s.home}>
+      <Banner/>
+      <Video/>
+      <Slider/>
+    </main>
   )
 }

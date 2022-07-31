@@ -5,12 +5,16 @@ import cn from 'classnames'
 type ButtonProps = {
   className: string
   buttonName: string
+  onClickFunction: () => void
 }
 
-export const Button: FC<ButtonProps> = ({className, buttonName}) => {
+export const Button: FC<ButtonProps> = ({className, buttonName, onClickFunction}) => {
   return (
     <div>
-      <button className={cn(s.button,className)}>{buttonName}</button>
+      <button onClick ={onClickFunction}
+        className={cn(s.button, className)}>
+        {buttonName}
+      </button>
     </div>
   )
 }
