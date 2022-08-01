@@ -18,7 +18,7 @@
       text-align: center;
       max-width: 735px;
       color: $gray;
-      @include upperCaseSimpleText;
+      @include upperCaseSimpleText(12px);
     }
 
     .bannerButton {

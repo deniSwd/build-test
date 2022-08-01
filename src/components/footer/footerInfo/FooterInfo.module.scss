@@ -8,10 +8,10 @@
 
   p {
     color: $darkgrey;
-    @include upperCaseSimpleText;
+    @include upperCaseSimpleText(12px);
   }
 
   .footerNav {
-    @include upperCaseSimpleText;
+    @include upperCaseSimpleText(12px);
   }
 }

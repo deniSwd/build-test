@@ -4,13 +4,13 @@
   display: grid;
   grid-template-columns: 42% 1fr;
   align-items: center;
-  justify-items: end;
   grid-gap: 0 30px;
   grid-area: video;
   height: 320px;
   background-color: $lightGrey;
 
   .preview {
+    justify-self: end;
 
     .youtubePreview {
       position: relative;
@@ -26,6 +26,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+    }
+  }
+
+  .description {
+    max-width: 520px;
+    h3{
+      color: $darkgrey;
+      @include upperCaseSimpleText(24px);
+    }
+    p {
+      margin-top: 24px;
+      @include simpleText;
     }
   }
 }
