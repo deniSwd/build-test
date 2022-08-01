@@ -1,0 +1,67 @@
+{
+  "works": [
+    {
+      "id": "1",
+      "title": "ArtPicture",
+      "category": "art",
+      "image": "/imgForJson/img1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. "
+    },
+    {
+      "id": "2",
+      "title": "Components",
+      "category": "web",
+      "image": "/imgForJson/img2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu."
+    },
+    {
+      "id": "3",
+      "title": "StoryPhoto",
+      "category": "photography",
+      "image": "/imgForJson/img3.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue."
+    },
+    {
+      "id": "4",
+      "title": "Smaile",
+      "category": "print",
+      "image": "/imgForJson/img4.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": "5",
+      "title": "Custom Icons",
+      "category": "web",
+      "image": "/imgForJson/img5.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus."
+    },
+    {
+      "id": "6",
+      "title": "Original idea",
+      "category": "print",
+      "image": "/imgForJson/img6.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris."
+    },
+    {
+      "id": "7",
+      "title": "Kids theme",
+      "category": "web",
+      "image": "/imgForJson/img7.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat."
+    },
+    {
+      "id": "8",
+      "title": "Cool shot",
+      "category": "print",
+      "image": "/imgForJson/img8.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellen"
+    },
+    {
+      "id": "9",
+      "title": "Photo collage",
+      "category": "photography",
+      "image": "/imgForJson/img9.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus."
+    }
+  ]
+}
