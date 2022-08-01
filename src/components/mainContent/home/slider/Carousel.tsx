@@ -23,7 +23,10 @@ export const Carousel: FC = () => {
         </p>
       </div>
       <div className={s.carouselImg}>
-        <img src={selectedItem?.image} alt=""/>
+        {works.map((i, key) =>
+          <div className={s.imgWrap} key={key}>
+            <img src={i.image} alt='imgWork'/>
+          </div>)}
       </div>
       <div className={s.carouselInfo}>
         <button className={s.leftButton}

@@ -12,7 +12,7 @@
       "title": "Components",
       "category": "web",
       "image": "/imgForJson/img2.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel."
     },
     {
       "id": "3",
@@ -26,7 +26,7 @@
       "title": "Smaile",
       "category": "print",
       "image": "/imgForJson/img4.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit erat lacus, vel congue mauris."
     },
     {
       "id": "5",
@@ -47,14 +47,14 @@
       "title": "Kids theme",
       "category": "web",
       "image": "/imgForJson/img7.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel."
     },
     {
       "id": "8",
       "title": "Cool shot",
       "category": "print",
       "image": "/imgForJson/img8.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellen"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pelleneu erat lacus, vel congue mauris."
     },
     {
       "id": "9",
