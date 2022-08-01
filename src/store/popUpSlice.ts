@@ -22,7 +22,7 @@ export const popUpSlice = createSlice({
       })
     },
     closePopUp: (state, action: PayloadAction<number>) => {
-      state.popUp.filter(i=> i.id !== action.payload)
+      state.popUp = state.popUp.filter(i => i.id !== action.payload)
     }
   },
 })

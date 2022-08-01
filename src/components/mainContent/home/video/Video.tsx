@@ -1,12 +1,22 @@
 import {FC} from "react"
 import s from './Video.module.scss'
 import playImg from '../../../../assets/play.png'
+import {useAppDispatch} from "../../../../store/hooks";
+import {createPopUp} from "../../../../store/popUpSlice";
+import {PopUpWrap} from "../../../secondary/popUp/PopUpWrap";
+import {VideoPopUp} from "../../../secondary/popUp/videoPopUp/VideoPopUp";
 
 export const Video: FC = () => {
+  const dispatch = useAppDispatch()
+
   return (
     <section className={s.video}>
       <div className={s.preview}>
-        <div className={s.youtubePreview}>
+        <div className={s.youtubePreview}
+             onClick={() => dispatch(createPopUp(id =>
+               <PopUpWrap id={id}>
+                 <VideoPopUp/>
+               </PopUpWrap>))}>
           <img className={s.playImg} src={playImg} alt='play'/>
         </div>
       </div>
