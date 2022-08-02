@@ -1,0 +1,17 @@
+@import '../../../../../style/vars';
+
+.carouselTitle{
+  text-align: center;
+
+  h3 {
+    color: $gray;
+    @include upperCaseSimpleText(24px);
+  }
+
+  p {
+    margin-top: 20px;
+    color: $gray;
+    max-width: 735px;
+    @include simpleText;
+  }
+}

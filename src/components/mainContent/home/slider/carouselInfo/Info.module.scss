@@ -1,0 +1,42 @@
+@import '../../../../../style/vars';
+
+.carouselInfo {
+  display: grid;
+  grid-gap: 0 60px;
+  align-items: center;
+  grid-template-areas: 'button-l info button-r';
+
+  .leftButton {
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    grid-area: button-l;
+    @include changeSvgColor($green);
+  }
+
+  .rightButton {
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    grid-area: button-r;
+    transform: rotate(180deg);
+    @include changeSvgColor($green);
+  }
+
+  .info {
+    text-align: center;
+    grid-area: info;
+
+    h3 {
+      color: $gray;
+      margin-bottom: 15px;
+      @include upperCaseSimpleText(18px);
+    }
+
+    p {
+      color: $gray;
+      max-width: 475px;
+      @include simpleText;
+    }
+  }
+}

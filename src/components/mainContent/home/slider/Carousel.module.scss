@@ -1,0 +1,11 @@
+
+.carousel {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-area: carousel;
+  height: 550px;
+  overflow: hidden;
+  padding: 50px 0;
+}

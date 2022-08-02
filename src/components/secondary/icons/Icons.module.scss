@@ -1,16 +1,9 @@
+@import '../../../style/vars';
+
 .item {
   margin-left: 4%;
 
-  path {
-    transition: 0.5s;
-  }
-
-  &:hover {
-    path {
-
-      fill: #00bbf5;
-    }
-  }
+  @include changeSvgColor($iconsHoverColor)
 }
 
 

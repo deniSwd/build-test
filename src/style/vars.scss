@@ -4,7 +4,7 @@ $lightGrey:#efefef;
 $green: #2ecc71;
 $dark: #322f2f;
 $fontColor: #a5a5a5;
-$iconsHover: #00bbf5;
+$iconsHoverColor: #00bbf5;
 $white: #ffffff;
 
 @mixin simpleText {
@@ -45,4 +45,15 @@ $white: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@mixin changeSvgColor($color) {
+  path {
+    transition: 0.5s;
+  }
+
+  &:hover {
+    path {
+      fill: $color;
+    }
+  }
 }
