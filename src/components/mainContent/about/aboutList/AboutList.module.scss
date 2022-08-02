@@ -1,0 +1,23 @@
+@import '../../../../style/vars';
+
+.listSection {
+  max-width: 930px;
+  margin: 30px auto 50px auto;
+
+  p {
+    width: 100%;
+    margin-bottom: 26px;
+    @include simpleText;
+  }
+  ul {
+    padding-left: 30px;
+    li {
+      @include simpleText;
+      padding-left: 8px;
+      list-style-image: url(../../../../../src/assets/bullet.png);
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

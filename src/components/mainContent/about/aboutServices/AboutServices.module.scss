@@ -1,0 +1,21 @@
+@import '../../../../style/vars';
+
+.services {
+  width: 100%;
+
+  h2 {
+    justify-self: start;
+    max-width: 930px;
+    margin: 0 auto;
+    height: 50px;
+    color: $darkgrey;
+    @include upperCaseSimpleText(24px);
+
+  }
+  .buttonField{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $lightGrey;
+  }
+}
