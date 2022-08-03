@@ -12,4 +12,8 @@ export type WorkType = {
   description: string
 }
 export type WorksType = Array<WorkType>
+export type WorksResponse = {
+  works: WorksType,
+  total: number
+}
 

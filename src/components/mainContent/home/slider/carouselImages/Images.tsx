@@ -11,11 +11,11 @@ type ImagesProps = {
 export const Images: FC<ImagesProps> = ({works, index}) => {
   return (
     <article className={s.carouselWrapper}>
-      {works.map((i, key) =>
+      {works.map((item, key) =>
         <div key={key}
              className={cn(s.imgWrap, key === index && s.selected)}
              style={{transform: `translate(calc(-50% + (${(key - index) * 320}px)), -50%)`}}>
-          <img src={i.image} alt='imgWork'/>
+          <img src={item.image} alt='imgWork'/>
         </div>)}
     </article>
   )
