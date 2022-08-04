@@ -4,12 +4,12 @@ import s from './FilterItem.module.scss'
 type FilterItemProps = {
   itemName: string
   category?: string
-  setCategory: (itemName:string) => void
+  onClickFunction: (itemName:string) => void
 }
 
-export const FilterItem:FC<FilterItemProps> = ({itemName, setCategory,category}) =>{
+export const FilterItem:FC<FilterItemProps> = ({itemName, onClickFunction,category}) =>{
   return (
-    <div className={category===itemName ? s.filterItem : ''} onClick={()=>setCategory(itemName)}>
+    <div className={category===itemName ? s.filterItem : ''} onClick={()=>onClickFunction(itemName)}>
       {itemName}
     </div>
   )

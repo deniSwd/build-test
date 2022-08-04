@@ -6,11 +6,15 @@ const instance = axios.create({
 })
 
 export const userAPI = {
-  async getWorks(page = 1, limit = 6, category?: string): Promise<WorksResponse> {
-    return instance.get<WorksType>(`/works?${category}&_${page}&_${limit}`).then(res => {
+  async getWorks(page = 0, limit = 9, category: string = 'all'): Promise<WorksResponse> {
+    const params: Record<string, any> = {}
+    params._page = page
+    params._limit = limit
+    if(category !== 'all') params.category = category
+    return instance.get<WorksType>(`/works`, { params }).then(res => {
       return {
         works: res.data,
-        total: +res.headers['X-Total-Count']
+        total: +res.headers['x-total-count']
       }
     })
   }

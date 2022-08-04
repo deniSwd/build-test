@@ -1,0 +1,10 @@
+@import '../../../../style/vars';
+
+.displayingStyle {
+  justify-self: end;
+
+  svg {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}

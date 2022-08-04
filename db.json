@@ -65,17 +65,17 @@
     },
     {
       "id": "10",
-      "title": "Second Smaile",
-      "category": "print",
-      "image": "/imgForJson/img4.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit erat lacus, vel congue mauris."
-    },
-    {
-      "id": "11",
       "title": "Social Networks",
       "category": "web",
       "image": "/imgForJson/img5.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus."
+    },
+    {
+      "id": "11",
+      "title": "Second Smaile",
+      "category": "print",
+      "image": "/imgForJson/img4.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit erat lacus, vel congue mauris."
     },
     {
       "id": "12",
@@ -83,6 +83,26 @@
       "category": "print",
       "image": "/imgForJson/img6.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris."
+    },{
+      "id": "13",
+      "title": "ColorArt",
+      "category": "art",
+      "image": "/imgForJson/img1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris adipiscing elit. "
+    },
+    {
+      "id": "14",
+      "title": "Web interface",
+      "category": "web",
+      "image": "/imgForJson/img2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel."
+    },
+    {
+      "id": "15",
+      "title": "Processing Photo",
+      "category": "photography",
+      "image": "/imgForJson/img3.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue."
     }
   ]
 }

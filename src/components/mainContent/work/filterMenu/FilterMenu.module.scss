@@ -1,0 +1,12 @@
+@import '../../../../style/vars';
+
+.filter {
+  display: flex;
+  color: $darkgrey;
+  @include upperCaseSimpleText(18px);
+  cursor: pointer;
+
+  span {
+    margin: 0 10px;
+  }
+}
