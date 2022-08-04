@@ -2,4 +2,8 @@
 
 .button {
   @include button;
+
+  &[disabled] {
+    background-color: $gray;
+  }
 }

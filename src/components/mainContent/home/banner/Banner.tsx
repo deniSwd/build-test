@@ -24,7 +24,7 @@ export const Banner: FC = () => {
           Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu. </p>
         <Button className={s.bannerButton}
                 buttonName={'BROWSE PORTFOLIO'}
-                onClickFunction={() => navigate('/work')}
+                onClick={() => navigate('/work')}
                 flip='flip-right'
                 mirror='true'
                 duration='1000'

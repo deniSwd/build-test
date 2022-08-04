@@ -6,7 +6,7 @@ const instance = axios.create({
 })
 
 export const userAPI = {
-  async getWorks(page = 0, limit = 9, category: string = 'all'): Promise<WorksResponse> {
+  async getWorks(page = 1, limit = 9, category: string = 'all'): Promise<WorksResponse> {
     const params: Record<string, any> = {}
     params._page = page
     params._limit = limit

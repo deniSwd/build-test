@@ -10,7 +10,7 @@ export const FooterTitle: FC = () => {
       <h1>
         A YOU READY TO BE BLOWN AWAY
       </h1>
-      <Button onClickFunction={() => navigate('/')}
+      <Button onClick={() => navigate('/')}
               className={s.footerButton}
               buttonName={'CLICK HEAR TO FIND OUT'}/>
     </section>

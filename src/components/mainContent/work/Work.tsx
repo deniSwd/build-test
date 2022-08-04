@@ -11,14 +11,14 @@ export const Work: FC = () => {
 
   const [displayingWorks, setDisplayingWorks] = useState<WorksType>([])
   const [totalItems, setTotalItems] = useState(0)
-  const pagesFetched = useRef(0)
+  const pagesFetched = useRef(1)
   const [category, setCategory] = useState('all')
   const hasMore = useMemo(() => (totalItems - displayingWorks.length) > 0, [totalItems, displayingWorks])
 
   const nextFetch = useCallback((reset?: boolean) => {
     if (reset) {
       setTotalItems(0)
-      pagesFetched.current = 0
+      pagesFetched.current = 1
     }
     userAPI.getWorks(pagesFetched.current, 6, category).then(({works, total}) => {
       if (reset) {
