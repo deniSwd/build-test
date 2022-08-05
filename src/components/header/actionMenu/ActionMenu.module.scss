@@ -1,0 +1,39 @@
+@import '../../../style/vars';
+
+.actionMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: -255px;
+  width: 250px;
+  height: 100vh;
+  padding: 10px 20px;
+  gap: 20px;
+  background-color: $lightGrey;
+  z-index: 150;
+  transition: 1s;
+
+  .closeMenuButton {
+    @include upperCaseSimpleText(14px);
+    height: 14px;
+    margin-bottom: 60px;
+    color: $darkgrey;
+    background-color: transparent;
+  }
+
+  .navItem {
+    @include navText;
+
+
+    &:not(:last-child) {
+      padding-bottom: 16px;
+      border-bottom: 2px solid $gray;
+    }
+  }
+}
+
+.openActionMenu {
+  right: 0;
+  //box-shadow: -1000px 0 0 0rgba(0,0,0,0.13);
+}

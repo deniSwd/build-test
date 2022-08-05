@@ -1,16 +1,21 @@
+@import '../../../style/vars';
+
 .logoLink {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   height: 110px;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid $gray;
 
   .logo {
-
+    max-width: 160px;
   }
 
   .links {
     display: flex;
     justify-content: end;
+    max-width: 240px;
+    height: 30px;
   }
 }

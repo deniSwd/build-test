@@ -1,0 +1,51 @@
+@import '../../../../style/vars';
+
+.contactInfo {
+  display: grid;
+  grid-template-columns: minmax(200px, 265px);
+  grid-template-rows: 185px 1fr;
+  grid-gap: 50px 0;
+  word-wrap: normal;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    p, span{
+      @include simpleText;
+      &:first-child {
+        color:$green;
+      }
+    }
+    b{
+      color: $fontColor;
+      margin-right: 3px;
+      font-weight: 600;
+    }
+    .mailPhone{
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0;
+
+    }
+  }
+
+  .storeHours {
+    display: flex;
+    flex-direction: column;
+    @include simpleText;
+
+    .storeHoursContent {
+      @include flexRow;
+
+      .week {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hours {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -30,7 +30,7 @@ export const Banner: FC = () => {
                 duration='1000'
                 delay='850'/>
       </div>
-      <img src={macbookImg}
+      {/*<img src={macbookImg}
            alt='macbook'
            className={s.animateImg3}
            data-aos='fade-right'
@@ -50,7 +50,7 @@ export const Banner: FC = () => {
            data-aos='fade-left'
            data-aos-mirror='true'
            data-aos-duration='1000'
-           data-aos-delay='50'/>
+           data-aos-delay='50'/>*/}
     </section>
   )
 }
