@@ -6,12 +6,12 @@ $dark: #322f2f;
 $fontColor: #a5a5a5;
 $iconsHoverColor: #00bbf5;
 $white: #ffffff;
+$error: #e77979;
 
 @mixin simpleText {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
-  line-height: 20px;
-  font-weight: 600;
+  line-height: 22px;
   color: $fontColor;
 }
 @mixin upperCaseSimpleText($fontSize) {

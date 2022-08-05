@@ -1,0 +1,18 @@
+@import '../../../../style/vars';
+
+.message{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+ h1{
+   @include upperCaseSimpleText(24px);
+   color: $darkgrey;
+ }
+  p {
+    margin-top: 50px;
+    @include upperCaseSimpleText(18px);
+    color: $gray;
+  }
+}

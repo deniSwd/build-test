@@ -27,7 +27,6 @@ export const selectWorks = (state: RootState) => state.works.works
 
 export const getWorks = (): AppThunk => async (dispatch) => {
   const {works} = await userAPI.getWorks()
-  console.log(works)
   dispatch(setWorks(works))
 }
 

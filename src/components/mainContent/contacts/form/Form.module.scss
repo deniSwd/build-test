@@ -1,32 +1,17 @@
 @import '../../../../style/vars';
 
 .formWrapper {
+  max-width: 560px;
 
-
-  h1 {
-    @include upperCaseSimpleText(24px);
-    color: $darkgrey;
-  }
-  p{
+  p {
     @include simpleText;
-    margin: 30px 0;
+    margin-bottom: 22px;
   }
 
   .form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-
-    .textarea {
-      border: 2px solid $darkgrey;
-      background-color: white;
-      width: 560px;
-      height: 220px;
-      &:focus {
-        outline: 0;
-        border: 2px solid $green;
-      }
-    }
+    gap: 15px;
 
     .submitButton {
       width: 135px;

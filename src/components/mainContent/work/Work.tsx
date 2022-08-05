@@ -20,14 +20,13 @@ export const Work: FC = () => {
       setTotalItems(0)
       pagesFetched.current = 1
     }
-    userAPI.getWorks(pagesFetched.current, 6, category).then(({works, total}) => {
+    userAPI.getWorks(pagesFetched.current++, 6, category).then(({works, total}) => {
       if (reset) {
         setDisplayingWorks(works)
       } else {
         setDisplayingWorks(displayingWorks => [...displayingWorks, ...works])
       }
       setTotalItems(total)
-      pagesFetched.current++
     })
   }, [category])
 
@@ -47,12 +46,12 @@ export const Work: FC = () => {
           <StyleSwitcher setListStyle={setListStyle} gridSwitchColor={gridSwitchColor}/>
         </article>
         <article>
-          {displayingWorks.length === 0 ?
-          <div className={s.noResultsMessage}>no results</div> :
-            <WorkContent nextFetch={nextFetch}
-                         hasMore={hasMore}
-                         displayingWorks={displayingWorks}
-                         listStyle={listStyle}/>}
+          {displayingWorks.length === 0 &&
+          <div className={s.noResultsMessage}>no results</div>}
+          <WorkContent nextFetch={nextFetch}
+                       hasMore={hasMore}
+                       displayingWorks={displayingWorks}
+                       listStyle={listStyle}/>
         </article>
       </section>
     </main>

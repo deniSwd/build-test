@@ -5,6 +5,10 @@ import * as yup from "yup"
 import {yupResolver} from "@hookform/resolvers/yup"
 import {Button} from "../../../secondary/button/Button"
 import s from './Form.module.scss'
+import {createPopUp} from "../../../../store/popUpSlice";
+import {PopUpWrap} from "../../../secondary/popUp/PopUpWrap";
+import {useAppDispatch} from "../../../../store/hooks";
+import {MessagePopUp} from "../../../secondary/popUp/messagePopUp/MessagePopUp";
 
 
 export interface IFormValues {
@@ -15,23 +19,26 @@ export interface IFormValues {
 }
 
 const schema = yup.object({
-  name: yup.string().min(2, 'Введите не менее 2-х символов').max(20, 'Введите не более 20-ти символов').required('Это поле обязательно'),
-  email: yup.string().email('Некорректный формат почты').required('Это поле обязательно'),
-  subject: yup.string().min(5, 'Введите не менее 5 символов').max(30, 'Введите не более 30-ти символов').required('Это поле обязательно'),
-  message: yup.string().min(1, 'Введите не менее 1 символa').max(1000, 'Введите не более 1000-чи символов').required('Это поле обязательно')
+  name: yup.string().min(2, 'Enter at least 2 characters').max(20, 'Enter no more than 20 characters').required('This field is required'),
+  email: yup.string().email('Incorrect mail format').required('This field is required'),
+  subject: yup.string().min(5, 'Enter at least 5 characters').max(30, 'Enter no more than 30 characters').required('This field is required'),
+  message: yup.string().min(1, 'Enter at least 1 character').max(1000, 'Enter no more than 1000 characters').required('This field is required')
 }).required()
 
 export const Form: FC = () => {
+  const dispatch = useAppDispatch()
 
   const {
     register,
     handleSubmit,
-    formState: {errors, dirtyFields}
+    formState: {errors}
   } = useForm<IFormValues>({resolver: yupResolver(schema)})
   const onSubmit: SubmitHandler<IFormValues> = useCallback(data => {
-    console.log(data)
-    console.log(errors)
-  }, [errors])
+    dispatch(createPopUp(id =>
+      <PopUpWrap id={id}>
+        <MessagePopUp name={data.name}/>
+      </PopUpWrap>))
+  }, [dispatch])
 
   return (
     <div className={s.formWrapper}>

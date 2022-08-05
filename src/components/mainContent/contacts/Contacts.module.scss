@@ -1,30 +1,33 @@
+@import '../../../style/vars';
+
 .contacts {
-  .contactsContent{
+  .contactsContent {
     display: grid;
     grid-template-rows: 500px 665px;
-    .googleMap{
+
+    .googleMap {
       width: 100%;
-      .map{
+
+      .map {
         width: 100%;
         height: 100%;
         border: 0;
-
       }
     }
-    .informationField{
+
+    .informationField {
       display: grid;
-      grid-template-columns: 56fr 27fr;
-      gap: 0 110px;
+      grid-template-columns: minmax(300px,560px) 1fr;
+      grid-gap: 0 110px;
       max-width: 940px;
       margin: 50px auto;
-      border: 1px solid gray;
-      .form{
+      h1{
+        @include  upperCaseSimpleText(18px);
+        color: $fontColor;
+        line-height: 24px;
+        margin-bottom: 18px;
+      }
 
-        border: 1px solid gray;
-      }
-      .contactInfo{
-        border: 1px solid gray;
-      }
     }
   }
 }

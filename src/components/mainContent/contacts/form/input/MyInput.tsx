@@ -16,7 +16,7 @@ export const Input: FC<InputProps> = ({label, register, placeholder, errors, tex
   return (
     <div className={s.inputWrapper}>
       {textarea ?
-        <textarea /*rows={1} wrap={'soft'}*/ className={cn(s.input,s.textarea, errors[label]?.message && s.error)} {...register(label)}
+        <textarea  className={cn(s.input,s.textarea, errors[label]?.message && s.error)} {...register(label)}
                   placeholder={placeholder}/> :
         <input className={cn(s.input, errors[label]?.message && s.error)} {...register(label)}
                placeholder={placeholder}/>}
