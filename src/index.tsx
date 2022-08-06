@@ -8,11 +8,14 @@ import './style/fonts.css'
 import 'aos/dist/aos.css'
 import {App} from "./App"
 import {BrowserRouter} from "react-router-dom"
+import {GoogleReCaptchaProvider} from "react-google-recaptcha-v3";
 
 const container = document.getElementById('root')!
 const root = createRoot(container)
 
 root.render(
+  <GoogleReCaptchaProvider
+    reCaptchaKey={'6LcvoFAhAAAAAI44vBjoCDzOVF_x4vCLCGNcUXb_'}>
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
@@ -20,6 +23,7 @@ root.render(
       </Provider>
     </BrowserRouter>
   </React.StrictMode>
+  </GoogleReCaptchaProvider>
 );
 
 // If you want to start measuring performance in your store, pass a function

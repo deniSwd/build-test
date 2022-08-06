@@ -3,15 +3,22 @@
 .carouselTitle{
   text-align: center;
 
-  h3 {
+  h2 {
+    padding: 0 20px;
     color: $gray;
     @include upperCaseSimpleText(24px);
   }
 
   p {
     margin-top: 20px;
+    padding: 0 20px;
     color: $gray;
-    max-width: 735px;
+    max-width: 775px;
     @include simpleText;
+  }
+  @media screen and (max-width: 480px) {
+    h2{
+      @include upperCaseSimpleText(20px);
+    }
   }
 }

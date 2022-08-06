@@ -1,13 +1,11 @@
 import React, {FC} from 'react'
 import s from './Contacts.module.scss'
 import {PageTitle} from "../../secondary/mainPageTitle/PageTitle"
-import {Form} from "./form/Form";
-import {ContactInfo} from "./contactInfo/ContactInfo";
+import {Form} from "./form/Form"
+import {ContactInfo} from "./contactInfo/ContactInfo"
 
 
 export const Contacts: FC = () => {
-  /*  const count = useAppSelector(selectCount)
-    const dispatch = useAppDispatch()*/
 
   return (
     <div className={s.contacts}>

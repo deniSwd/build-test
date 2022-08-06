@@ -51,4 +51,19 @@ h4 {
       }
     }
   }
+
+  @media screen and (max-width: 560px) {
+    margin: 20px 0;
+    .workBox {
+      grid-template-columns: 1fr;
+      .workImage{
+        margin: 0 auto;
+      }
+      .workDescription {
+        h2, h4, p {
+          text-align: center;
+        }
+      }
+    }
+  }
 }

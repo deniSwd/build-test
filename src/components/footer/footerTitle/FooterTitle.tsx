@@ -6,13 +6,15 @@ import {useNavigate} from "react-router-dom";
 export const FooterTitle: FC = () => {
   const navigate = useNavigate()
   return (
-    <section className={s.footerTitle}>
-      <h1>
+    <article className={s.footerTitle}>
+      <div className={s.contentWrap}>
+        <h1>
         A YOU READY TO BE BLOWN AWAY
       </h1>
-      <Button onClick={() => navigate('/')}
-              className={s.footerButton}
-              buttonName={'CLICK HEAR TO FIND OUT'}/>
-    </section>
+        <Button onClick={() => navigate('/')}
+                className={s.footerButton}
+                buttonName={'CLICK HEAR TO FIND OUT'}/>
+      </div>
+    </article>
   )
 }

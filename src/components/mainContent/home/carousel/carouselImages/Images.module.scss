@@ -4,6 +4,9 @@
   height: 200px;
   position: relative;
   margin: 40px 0;
+  @media screen and (max-width: 480px) {
+    margin: 20px 0;
+  }
 }
 
 .imgWrap {

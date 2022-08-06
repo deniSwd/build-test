@@ -9,13 +9,19 @@
   border-bottom: 1px solid $gray;
 
   .logo {
+    display: flex;
     max-width: 160px;
+
+    img {
+      margin: auto;
+    }
   }
 
   .links {
     display: flex;
-    justify-content: end;
-    max-width: 240px;
-    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    width: 240px;
   }
 }

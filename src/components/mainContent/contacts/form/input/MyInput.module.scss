@@ -18,6 +18,10 @@
     outline: 0;
     border: 2px solid $green;
   }
+
+  @media screen and (max-width: 710px) {
+    width: 280px;
+  }
 }
 
 .textarea {

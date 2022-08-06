@@ -4,48 +4,33 @@
   h2 {
     color: $darkgrey;
     margin-bottom: 24px;
-    line-height: 22px;
+    line-height: 24px;
     @include upperCaseSimpleText(24px);
   }
 
   p {
     @include simpleText;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 }
 
 .mainSection {
   display: grid;
-  grid-template-rows: 260fr 165fr;
+  grid-template-rows: 260px 165px;
   grid-gap: 50px 0;
-  padding: 50px 0;
-  max-width: 930px;
+  padding: 50px 20px;
+  max-width: 980px;
   margin: 0 auto;
-  @media screen  and (max-width: 930px) {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 20px;
-  }
 
   .topField {
     display: grid;
-    grid-template-columns: 412fr 518fr;
+    grid-template-columns: 380px 1fr;
     grid-gap: 0 30px;
-    height: 260px;
-    @media screen  and (max-width: 930px) {
-      grid-template-columns: 1fr;
-      grid-gap: 20px 0;
-      height: 600px;
-    }
 
     .aboutPageImg {
-      justify-self: start;
+      justify-self: end;
       max-height: 260px;
       max-width: 380px;
-      @media screen  and (max-width: 930px) {
-        justify-self:center;
-      }
-
 
       img {
         width: 100%;
@@ -56,8 +41,8 @@
 
     .aboutText {
       @extend %baseTextBlock;
-      max-width: 515px;
-
+      max-width: 530px;
+      margin-top: -3px;
     }
   }
 
@@ -65,22 +50,40 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0 50px;
-    height: 165px;
-    @media screen  and (max-width: 930px) {
-      grid-template-columns: 1fr;
-      grid-gap: 20px 0;
-      height: 440px;
-    }
 
     .missionText {
       justify-self: start;
-      max-width: 440px;
+      max-width: 445px;
       @extend %baseTextBlock;
     }
 
     .factsText {
-      max-width: 440px;
+      max-width: 445px;
       @extend %baseTextBlock;
+    }
+  }
+  @media screen and (max-width: 940px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    justify-items: center;
+    padding: 20px;
+    .topField{
+      grid-template-columns: 1fr;
+      grid-gap: 20px 0;
+      .aboutPageImg{
+        justify-self:center;
+      }
+      .aboutText{
+
+      }
+    }
+    .downField{
+      grid-template-columns: 1fr;
+      grid-gap: 20px 0;
+      .missionText, .factsText {
+        max-width: 530px;
+      }
     }
   }
 }

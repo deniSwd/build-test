@@ -40,11 +40,14 @@
       .week {
         display: flex;
         flex-direction: column;
+
       }
 
       .hours {
         display: flex;
         flex-direction: column;
+        margin-left: 10px;
+
       }
     }
   }

@@ -5,7 +5,11 @@
   justify-items: center;
   align-items: center;
   grid-area: carousel;
-  height: 550px;
+  min-height: 550px;
   overflow: hidden;
   padding: 50px 0;
+
+  @media screen and (max-width: 480px) {
+    padding: 20px 0;
+  }
 }

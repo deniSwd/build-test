@@ -15,10 +15,22 @@ export const ActionMenu: FC<ActionMenuProps> = ({openMenu, setOpenMenu}) => {
       <Button className={s.closeMenuButton}
               buttonName={'close'}
               onClick={() => setOpenMenu(false)}/>
-      <NavItem text='HOME' path='/' className={s.navItem}/>
-      <NavItem text='ABOUT' path='/about' className={s.navItem}/>
-      <NavItem text='WORK' path='/work' className={s.navItem}/>
-      <NavItem text='CONTACT' path='/contacts' className={s.navItem}/>
+      <NavItem text='HOME'
+               path='/'
+               setOpenMenu={setOpenMenu}
+               className={s.navItem}/>
+      <NavItem text='ABOUT'
+               path='/about'
+               setOpenMenu={setOpenMenu}
+               className={s.navItem}/>
+      <NavItem text='WORK'
+               path='/work'
+               setOpenMenu={setOpenMenu}
+               className={s.navItem}/>
+      <NavItem text='CONTACT'
+               path='/contacts'
+               setOpenMenu={setOpenMenu}
+               className={s.navItem}/>
     </nav>
   )
 }

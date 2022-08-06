@@ -18,6 +18,8 @@ export const Header: FC = () => {
           <img src={forButtonImg} alt='X'/>
         </div>
       </div>
+      {openMenu && <div className={s.background}
+                        onClick={() => setOpenMenu(false)}></div>}
         <ActionMenu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
     </header>
   )

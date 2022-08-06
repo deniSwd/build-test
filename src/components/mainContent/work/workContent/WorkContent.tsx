@@ -16,7 +16,7 @@ export const WorkContent: FC<WorkContentProps> = ({nextFetch, hasMore, displayin
                     dataLength={displayingWorks.length}
                     className={listStyle ? s.workMapList : s.workMapGrid} loader={<h4>Loading...</h4>}>
       {displayingWorks.map((item, key) => <div key={key} className={s.workBox}>
-        <img src={item.image} alt='work'/>
+        <img src={item.image} className={s.workImage} alt='work'/>
         {listStyle &&
             <div className={s.workDescription}>
                 <h2>{item.title}</h2>

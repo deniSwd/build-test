@@ -2,19 +2,38 @@
 
 .footerTitle {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 140px;
   width: 100%;
-  padding: 0 17%;
   background-color: $dark;
 
-  h1 {
-    font-size: 24px;
-    @include titleText;
+  .contentWrap {
+    @include contentWrap;
+
+    h1 {
+      color: $white;
+      padding-right: 20px;
+      @include upperCaseSimpleText(24px);
+    }
+
+    .footerButton {
+      width: 220px;
+    }
   }
 
-  .footerButton {
-    width:220px;
+  @media screen and (max-width: 480px) {
+    height: 120px;
+    .contentWrap {
+      flex-direction: column;
+      text-align: center;
+
+      h1 {
+        padding-right: 0;
+        @include upperCaseSimpleText(18px);
+      }
+
+      .footerButton {
+        margin-top: 10px;
+      }
+    }
   }
 }

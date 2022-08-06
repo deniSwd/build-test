@@ -19,11 +19,6 @@ $error: #e77979;
   font-size: $fontSize;
 }
 
-@mixin titleText {
-  font-family: Novecent, sans-serif;
-  color: $white;
-}
-
 @mixin navText {
   font-family: Novecent, sans-serif;
   font-size: 18px;
@@ -45,6 +40,13 @@ $error: #e77979;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin contentWrap {
+  margin: auto;
+  @include flexRow;
+  width: 980px;
+  padding: 0 20px;
 }
 @mixin changeSvgColor($color) {
   path {

@@ -2,6 +2,7 @@
 
 .home {
   display: grid;
+  grid-template-columns: 100%;
   grid-template-areas: 'banner'
                        'video'
                        'carousel';

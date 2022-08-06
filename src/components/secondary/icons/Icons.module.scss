@@ -1,10 +1,9 @@
 @import '../../../style/vars';
 
 .item {
-  width: 30px;
-  height: 30px;
-  margin-left: 4%;
-  @include changeSvgColor($iconsHoverColor)
+  width: 33px;
+  height: 33px;
+  @include changeSvgColor($iconsHoverColor);
 }
 
 

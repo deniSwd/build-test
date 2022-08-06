@@ -1,12 +1,13 @@
 @import '../../../../style/vars';
 
 .listSection {
-  max-width: 930px;
+  max-width: 980px;
   margin: 30px auto 50px auto;
+  padding: 0 20px;
 
   p {
     width: 100%;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
     @include simpleText;
   }
   ul {

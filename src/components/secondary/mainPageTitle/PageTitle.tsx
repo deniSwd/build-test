@@ -8,9 +8,9 @@ type PageTitleProps ={
 export const PageTitle: FC<PageTitleProps> = ({titleText}) => {
   return (
     <section className={s.pageTitle}>
-      <h1>
-        {titleText}
-      </h1>
+      <div className={s.contentWrap}>
+        <h1>{titleText}</h1>
+      </div>
     </section>
   )
 }

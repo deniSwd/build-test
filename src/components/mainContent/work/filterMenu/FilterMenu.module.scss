@@ -9,4 +9,15 @@
   span {
     margin: 0 10px;
   }
+
+  @media screen and (max-width: 610px) {
+    @include upperCaseSimpleText(14px);
+  }
+  @media screen and (max-width: 480px) {
+    @include upperCaseSimpleText(11px);
+    span {
+      margin: 0 2px;
+    }
+  }
+
 }

@@ -4,9 +4,9 @@ import s from './Title.module.scss'
 export const Title:FC =() => {
   return (
     <article className={s.carouselTitle}>
-      <h3>
+      <h2>
         A Couple of Our Featured Projects
-      </h3>
+      </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Pellentesque eu erat lacus, vel congue mauris.

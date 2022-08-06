@@ -1,17 +1,32 @@
 @import '../../../style/vars';
 
 .footerInfo {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 60px;
-  padding: 0 16%;
   @include flexRow;
 
-  p {
-    color: $darkgrey;
-    @include upperCaseSimpleText(12px);
+  .contentWrap {
+    @include contentWrap;
+
+    p {
+      color: $darkgrey;
+      @include upperCaseSimpleText(12px);
+    }
+
+    .footerNav {
+      @include upperCaseSimpleText(12px);
+    }
   }
 
-  .footerNav {
-    @include upperCaseSimpleText(12px);
+  @media screen and (max-width: 480px) {
+    .contentWrap {
+      flex-direction: column;
+
+      p {
+        @include upperCaseSimpleText(10px);
+      }
+    }
   }
 }

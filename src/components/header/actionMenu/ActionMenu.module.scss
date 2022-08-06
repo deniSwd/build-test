@@ -3,7 +3,7 @@
 .actionMenu {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -255px;
   width: 250px;
@@ -11,8 +11,8 @@
   padding: 10px 20px;
   gap: 20px;
   background-color: $lightGrey;
-  z-index: 150;
-  transition: 1s;
+  z-index: 250;
+  transition: all .3s;
 
   .closeMenuButton {
     @include upperCaseSimpleText(14px);
@@ -35,5 +35,4 @@
 
 .openActionMenu {
   right: 0;
-  //box-shadow: -1000px 0 0 0rgba(0,0,0,0.13);
 }

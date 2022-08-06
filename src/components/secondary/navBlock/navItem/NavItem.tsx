@@ -7,11 +7,14 @@ type NavItemProps = {
   text: string
   path: string
   className: string
+  setOpenMenu?: (openMenu:boolean)=>void
 }
 
-export const NavItem: FC<NavItemProps> = ({text, path, className}) => {
+export const NavItem: FC<NavItemProps> = ({text, path, className,setOpenMenu}) => {
   return (
-    <NavLink to={path} className={({isActive}) => isActive ? cn(s.activeNav, className) : cn(s.navItem, className)}>
+    <NavLink to={path}
+             onClick={()=>setOpenMenu?.(false)}
+             className={({isActive}) => isActive ? cn(s.activeNav, className) : cn(s.navItem, className)}>
       {text}
     </NavLink>
   )

@@ -32,4 +32,15 @@
       }
     }
   }
+  .background{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(40, 40, 40, 0.4);
+    z-index: 50;
+    cursor: pointer;
+    transition: all .3s;
+  }
 }

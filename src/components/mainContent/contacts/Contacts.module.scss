@@ -3,7 +3,7 @@
 .contacts {
   .contactsContent {
     display: grid;
-    grid-template-rows: 500px 665px;
+    grid-template-rows: 500px 1fr;
 
     .googleMap {
       width: 100%;
@@ -17,17 +17,29 @@
 
     .informationField {
       display: grid;
-      grid-template-columns: minmax(300px,560px) 1fr;
+      grid-template-columns: minmax(300px, 560px) 210px;
       grid-gap: 0 110px;
-      max-width: 940px;
+      max-width: 980px;
+      padding: 0 20px;
       margin: 50px auto;
-      h1{
-        @include  upperCaseSimpleText(18px);
+
+      h1 {
+        @include upperCaseSimpleText(18px);
         color: $fontColor;
         line-height: 24px;
         margin-bottom: 18px;
       }
 
+      @media screen and (max-width: 710px) {
+        grid-template-columns: 300px 1fr;
+        grid-gap: 0 20px;
+        margin: 20px auto;
+      }
+      @media screen and (max-width: 570px) {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+        grid-gap: 20px 0;
+      }
     }
   }
 }

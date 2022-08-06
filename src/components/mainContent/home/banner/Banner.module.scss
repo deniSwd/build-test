@@ -1,11 +1,38 @@
 @import '../../../../style/vars';
 
 .banner {
-  position: relative;
   display: grid;
   grid-area: banner;
   justify-items: center;
   align-items: center;
+  .bannerImg{
+    position: relative;
+    display: flex;
+    .bannerBackground {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+    }
+    .animateImg1, .animateImg2, .animateImg3 {
+      position: absolute;
+      bottom: -12%;
+    }
+
+    .animateImg1 {
+      height: calc(1vw * 13 + 35px);
+      right:18%;
+    }
+
+    .animateImg2 {
+      height: calc(1vw * 24 + 45px);
+      right:20%;
+    }
+
+    .animateImg3 {
+      height: calc(1vw * 19 + 45px);
+      right:30%;
+    }
+  }
 
   .bannerInfo {
     display: grid;
@@ -16,9 +43,12 @@
 
     p {
       text-align: center;
-      max-width: 735px;
+      text-wrap: normal;
+      max-width: 755px;
+      padding: 0 10px;
       color: $gray;
       @include upperCaseSimpleText(12px);
+
     }
 
     .bannerButton {
@@ -27,21 +57,10 @@
     }
   }
 
-  .animateImg1 {
-    position: absolute;
-    bottom: 205px;
-    right:22%;
-  }
 
-  .animateImg2 {
-    position: absolute;
-    bottom: 205px;
-    right:25%;
-  }
-
-  .animateImg3 {
-    position: absolute;
-    bottom: 205px;
-    right:35%;
+  @media screen and (max-width: 480px) {
+    .bannerInfo p {
+      @include upperCaseSimpleText(10px);
+    }
   }
 }

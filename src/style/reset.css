@@ -81,3 +81,7 @@ meter {
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
+
+.grecaptcha-badge {
+    opacity: .4;
+}

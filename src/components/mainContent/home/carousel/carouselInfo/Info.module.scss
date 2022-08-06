@@ -6,21 +6,21 @@
   align-items: center;
   grid-template-areas: 'button-l info button-r';
 
-  .leftButton {
+  .leftButton, .rightButton {
     display: grid;
     align-items: center;
     cursor: pointer;
-    grid-area: button-l;
+    padding: 0 20px;
     @include changeSvgColor($green);
   }
 
+  .leftButton {
+    grid-area: button-l;
+  }
+
   .rightButton {
-    display: grid;
-    align-items: center;
-    cursor: pointer;
     grid-area: button-r;
     transform: rotate(180deg);
-    @include changeSvgColor($green);
   }
 
   .info {
@@ -38,5 +38,8 @@
       max-width: 475px;
       @include simpleText;
     }
+  }
+  @media screen and (max-width: 480px) {
+    grid-gap: 0 20px;
   }
 }

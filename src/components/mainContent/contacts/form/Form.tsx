@@ -1,4 +1,4 @@
-import {FC, useCallback} from "react"
+import {FC, useCallback, useState} from "react"
 import {Input} from "./input/MyInput"
 import {SubmitHandler, useForm} from "react-hook-form"
 import * as yup from "yup"
@@ -9,6 +9,7 @@ import {createPopUp} from "../../../../store/popUpSlice";
 import {PopUpWrap} from "../../../secondary/popUp/PopUpWrap";
 import {useAppDispatch} from "../../../../store/hooks";
 import {MessagePopUp} from "../../../secondary/popUp/messagePopUp/MessagePopUp";
+import {GoogleReCaptcha} from "react-google-recaptcha-v3";
 
 
 export interface IFormValues {
@@ -27,6 +28,9 @@ const schema = yup.object({
 
 export const Form: FC = () => {
   const dispatch = useAppDispatch()
+  const [verified, setVerified] = useState(false)
+  const [verifiedError, setVerifiedError] = useState('')
+  const verify = useCallback(() => setVerified(true), [])
 
   const {
     register,
@@ -34,11 +38,15 @@ export const Form: FC = () => {
     formState: {errors}
   } = useForm<IFormValues>({resolver: yupResolver(schema)})
   const onSubmit: SubmitHandler<IFormValues> = useCallback(data => {
-    dispatch(createPopUp(id =>
-      <PopUpWrap id={id}>
-        <MessagePopUp name={data.name}/>
-      </PopUpWrap>))
-  }, [dispatch])
+    if(verified) {
+      dispatch(createPopUp(id =>
+        <PopUpWrap id={id}>
+          <MessagePopUp name={data.name}/>
+        </PopUpWrap>))
+    } else {
+      setVerifiedError('Verified error !')
+    }
+  }, [verified,dispatch])
 
   return (
     <div className={s.formWrapper}>
@@ -65,6 +73,8 @@ export const Form: FC = () => {
                textarea/>
         <Button type='submit' className={s.submitButton} buttonName={'send message'}
                 disabled={errors.name || errors.email || errors.subject || errors.message}/>
+        {!verified && <span className={s.verifiedError}>{verifiedError}</span> }
+        <GoogleReCaptcha onVerify={verify}/>
       </form>
     </div>
   )

@@ -1,10 +1,19 @@
 @import '../../../../style/vars';
 
 .displayingStyle {
-  justify-self: end;
+  display: flex;
+  justify-content: end;
+  //align-items: center;
 
   svg {
     margin-left: 10px;
     cursor: pointer;
+  }
+  @media screen and (max-width: 610px) {
+    justify-content: start;
+    svg{
+      margin-left: 0;
+      margin-right: 10px;
+    }
   }
 }

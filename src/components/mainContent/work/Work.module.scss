@@ -3,12 +3,14 @@
 .work {
 
   .workContent {
-    max-width: 940px;
+    max-width: 980px;
     margin: 0 auto;
+    padding: 0 20px;
 
     .filterAndStyle {
       display: grid;
-      grid-template-columns: minmax(280px, 40fr) minmax(40px, 7fr);
+      align-items: center;
+      grid-template-columns: 1fr 60px;
       margin-top: 50px;
     }
 
@@ -16,6 +18,16 @@
       @include upperCaseSimpleText(24px);
       color: $darkgrey;
       margin: 100px 0;
+    }
+    @media screen and (max-width: 610px) {
+      .filterAndStyle {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0;
+      }
+      .noResultsMessage{
+        margin: 50px 0;
+      }
     }
   }
 }
