@@ -10,13 +10,16 @@
     margin-bottom: 22px;
     @include simpleText;
   }
+
   ul {
     padding-left: 30px;
+
     li {
       @include simpleText;
       padding-left: 8px;
       list-style-image: url(../../../../../src/assets/bullet.png);
-      &:not(:last-child){
+
+      &:not(:last-child) {
         margin-bottom: 10px;
       }
     }

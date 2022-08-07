@@ -50,17 +50,18 @@
     .preview {
       justify-self: center;
     }
-    .description{
+    .description {
       margin-bottom: 30px;
       padding-left: 20px;
-      h3{
+
+      h3 {
         text-align: center;
       }
     }
   }
   @media screen and (max-width: 480px) {
-    .preview{
-      .youtubePreview{
+    .preview {
+      .youtubePreview {
         width: 320px;
         height: 204px;
       }

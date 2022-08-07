@@ -1,7 +1,7 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './NavItem.module.scss'
-import {NavLink} from "react-router-dom";
-import cn from "classnames";
+import {NavLink} from 'react-router-dom'
+import cn from 'classnames'
 
 type NavItemProps = {
   text: string

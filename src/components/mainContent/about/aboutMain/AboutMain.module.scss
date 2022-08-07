@@ -62,25 +62,29 @@
       @extend %baseTextBlock;
     }
   }
+
   @media screen and (max-width: 940px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 0;
     justify-items: center;
     padding: 20px;
-    .topField{
+    .topField {
       grid-template-columns: 1fr;
       grid-gap: 20px 0;
-      .aboutPageImg{
-        justify-self:center;
+
+      .aboutPageImg {
+        justify-self: center;
       }
-      .aboutText{
+
+      .aboutText {
 
       }
     }
-    .downField{
+    .downField {
       grid-template-columns: 1fr;
       grid-gap: 20px 0;
+
       .missionText, .factsText {
         max-width: 530px;
       }

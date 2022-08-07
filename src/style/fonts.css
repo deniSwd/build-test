@@ -2,10 +2,12 @@
     font-family: Novecent;
     src: url('../assets/fonts/Novecento-WideDemiBold.otf');
 }
+
 @font-face {
     font-family: Helvetica;
     src: url('../assets/fonts/HelveticaNeue.ttf');
 }
+
 @font-face {
     font-family: Myriad;
     src: url('../assets/fonts/MYRIADPRO-REGULAR.OTF');

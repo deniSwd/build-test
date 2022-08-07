@@ -1,6 +1,6 @@
 $gray: #dadada;
 $darkgrey: #737373;
-$lightGrey:#efefef;
+$lightGrey: #efefef;
 $green: #2ecc71;
 $dark: #322f2f;
 $fontColor: #a5a5a5;
@@ -14,6 +14,7 @@ $error: #e77979;
   line-height: 22px;
   color: $fontColor;
 }
+
 @mixin upperCaseSimpleText($fontSize) {
   font-family: Novecent, sans-serif;
   font-size: $fontSize;
@@ -50,6 +51,7 @@ $error: #e77979;
   width: 980px;
   padding: 0 20px;
 }
+
 @mixin changeSvgColor($color) {
   path {
     transition: 0.5s;

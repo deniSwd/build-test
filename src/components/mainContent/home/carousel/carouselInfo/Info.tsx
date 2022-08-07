@@ -1,7 +1,7 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './Info.module.scss'
-import {Arrow} from "../../../../secondary/carouselArrow/Arrow"
-import {WorksType, WorkType} from "../../../../../mainTypes";
+import {Arrow} from '../../../../secondary/carouselArrow/Arrow'
+import {WorksType, WorkType} from '../../../../../mainTypes'
 
 type InfoProps = {
   index: number

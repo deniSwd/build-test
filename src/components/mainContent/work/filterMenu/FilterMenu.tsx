@@ -1,12 +1,11 @@
-import React, {FC} from "react"
+import React, {FC} from 'react'
 import s from './FilterMenu.module.scss'
-import {FilterItem} from "../../../secondary/filterItem/FilterItem"
+import {FilterItem} from '../../../secondary/filterItem/FilterItem'
 
 type FilterMenuProps = {
   category: string
   setCategory: (itemName: string) => void
 }
-
 
 export const FilterMenu: FC<FilterMenuProps> = ({category, setCategory}) => {
   return (

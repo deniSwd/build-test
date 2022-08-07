@@ -10,7 +10,7 @@
   .contentWrap {
     @include contentWrap;
 
-    p {
+    span {
       color: $darkgrey;
       @include upperCaseSimpleText(12px);
     }
@@ -24,7 +24,7 @@
     .contentWrap {
       flex-direction: column;
 
-      p {
+      span {
         @include upperCaseSimpleText(10px);
       }
     }

@@ -1,4 +1,4 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './Title.module.scss'
 
 export const Title:FC =() => {

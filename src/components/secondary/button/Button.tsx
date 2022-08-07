@@ -1,9 +1,9 @@
-import {FC} from "react"
-import s from "./Button.module.scss"
+import {FC} from 'react'
+import s from './Button.module.scss'
 import cn from 'classnames'
 
 type ButtonProps = {
-  type?: "button" | "submit" | "reset"
+  type?: 'button' | 'submit' | 'reset'
   disabled?: any
   className: string
   buttonName: string
@@ -30,8 +30,7 @@ export const Button: FC<ButtonProps> = ({
               data-aos={flip}
               data-aos-mirror={mirror}
               data-aos-duration={duration}
-              data-aos-delay={delay}
-      >
+              data-aos-delay={delay}>
         {buttonName}
       </button>
     </div>

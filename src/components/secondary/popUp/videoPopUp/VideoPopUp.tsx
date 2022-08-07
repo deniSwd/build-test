@@ -1,4 +1,4 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './VideoPopUp.module.scss'
 
 export const VideoPopUp: FC = () => {

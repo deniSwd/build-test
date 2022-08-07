@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC} from 'react'
 import s from './Icons.module.scss'
 
 export const TwitterIcon: FC = () => {

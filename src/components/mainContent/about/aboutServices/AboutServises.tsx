@@ -1,12 +1,12 @@
-import React, {FC} from "react"
+import React, {FC} from 'react'
 import s from './AboutServices.module.scss'
-import {ServicesButton} from "../../../secondary/servicesButton/ServicesButton";
-import website from "../../../../assets/websites.png";
-import photo from "../../../../assets/photography.png";
-import seo from "../../../../assets/seo.png";
-import applications from "../../../../assets/applications.png";
+import {ServicesButton} from '../../../secondary/servicesButton/ServicesButton'
+import website from '../../../../assets/websites.png'
+import photo from '../../../../assets/photography.png'
+import seo from '../../../../assets/seo.png'
+import applications from '../../../../assets/applications.png'
 
-export const AboutServises:FC = () => {
+export const AboutServices:FC = () => {
   return (
     <section className={s.services}>
       <h2>Services</h2>

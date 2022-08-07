@@ -1,4 +1,4 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './LogoLink.module.scss'
 import {
   DribbbleIcon,
@@ -7,8 +7,8 @@ import {
   PinterestIcon,
   RssIcon,
   TwitterIcon
-} from "../../secondary/icons/Icons"
-import logoImg from'../../../assets/logo.svg'
+} from '../../secondary/icons/Icons'
+import logoImg from '../../../assets/logo.svg'
 
 export const LogoLink: FC = () => {
   return (

@@ -1,6 +1,6 @@
 @import '../../../../../style/vars';
 
-.carouselTitle{
+.carouselTitle {
   text-align: center;
 
   h2 {
@@ -16,8 +16,9 @@
     max-width: 775px;
     @include simpleText;
   }
+
   @media screen and (max-width: 480px) {
-    h2{
+    h2 {
       @include upperCaseSimpleText(20px);
     }
   }

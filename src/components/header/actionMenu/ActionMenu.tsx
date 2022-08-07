@@ -1,8 +1,8 @@
-import {NavItem} from "../../secondary/navBlock/navItem/NavItem"
-import {FC} from "react"
+import {NavItem} from '../../secondary/navBlock/navItem/NavItem'
+import {FC} from 'react'
 import s from './ActionMenu.module.scss'
-import cn from "classnames"
-import {Button} from "../../secondary/button/Button";
+import cn from 'classnames'
+import {Button} from '../../secondary/button/Button'
 
 type ActionMenuProps = {
   openMenu: boolean

@@ -1,4 +1,15 @@
-.errorPage{
+@import '../../../style/vars';
+
+.errorPage {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  @include upperCaseSimpleText(36px);
+  color: $gray;
+  @media screen and (max-width: 480px) {
+    height: 200px;
+    @include upperCaseSimpleText(24px);
+  }
 }

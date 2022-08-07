@@ -1,6 +1,6 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 import {RootState} from './store'
-import {AddJsxFunc, PopUpType} from "../mainTypes"
+import {AddJsxFunc, PopUpType} from '../mainTypes'
 
 export interface popUpState {
   popUp: Array<PopUpType>
@@ -30,14 +30,5 @@ export const popUpSlice = createSlice({
 export const {createPopUp, closePopUp} = popUpSlice.actions
 
 export const selectPopUp = (state: RootState) => state.popUps.popUp
-
-/*export const incrementIfOdd =
-  (amount: number): AppThunk =>
-  (dispatch, getState) => {
-    const currentValue = selectCount(getState());
-    if (currentValue % 2 === 1) {
-      dispatch(incrementByAmount(amount));
-    }
-  };*/
 
 export default popUpSlice.reducer

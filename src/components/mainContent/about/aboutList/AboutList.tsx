@@ -1,4 +1,4 @@
-import React, {FC} from "react"
+import React, {FC} from 'react'
 import s from './AboutList.module.scss'
 
 export const AboutList:FC = () => {

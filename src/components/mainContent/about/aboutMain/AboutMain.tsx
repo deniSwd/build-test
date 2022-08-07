@@ -1,6 +1,6 @@
-import React, {FC} from "react"
+import React, {FC} from 'react'
 import s from './AboutMain.module.scss'
-import aboutPageImg from "../../../../assets/AboutPageImg.png";
+import aboutPageImg from '../../../../assets/AboutPageImg.png'
 
 export const AboutMain:FC = () => {
   return (

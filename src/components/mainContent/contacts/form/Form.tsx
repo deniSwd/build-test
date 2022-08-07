@@ -1,15 +1,15 @@
-import {FC, useCallback, useState} from "react"
-import {Input} from "./input/MyInput"
-import {SubmitHandler, useForm} from "react-hook-form"
-import * as yup from "yup"
-import {yupResolver} from "@hookform/resolvers/yup"
-import {Button} from "../../../secondary/button/Button"
+import {FC, useCallback, useState} from 'react'
+import {Input} from './input/MyInput'
+import {SubmitHandler, useForm} from 'react-hook-form'
+import * as yup from 'yup'
+import {yupResolver} from '@hookform/resolvers/yup'
+import {Button} from '../../../secondary/button/Button'
 import s from './Form.module.scss'
-import {createPopUp} from "../../../../store/popUpSlice";
-import {PopUpWrap} from "../../../secondary/popUp/PopUpWrap";
-import {useAppDispatch} from "../../../../store/hooks";
-import {MessagePopUp} from "../../../secondary/popUp/messagePopUp/MessagePopUp";
-import {GoogleReCaptcha} from "react-google-recaptcha-v3";
+import {createPopUp} from '../../../../store/popUpSlice'
+import {PopUpWrap} from '../../../secondary/popUp/PopUpWrap'
+import {useAppDispatch} from '../../../../store/hooks'
+import {MessagePopUp} from '../../../secondary/popUp/messagePopUp/MessagePopUp'
+import {GoogleReCaptcha} from 'react-google-recaptcha-v3'
 
 
 export interface IFormValues {

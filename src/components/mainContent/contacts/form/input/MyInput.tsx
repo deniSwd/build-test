@@ -1,8 +1,8 @@
-import {FC} from "react"
-import {Path, UseFormRegister} from "react-hook-form"
+import {FC} from 'react'
+import {Path, UseFormRegister} from 'react-hook-form'
 import {IFormValues} from '../Form'
 import s from './MyInput.module.scss'
-import cn from "classnames"
+import cn from 'classnames'
 
 type InputProps = {
   label: Path<IFormValues>

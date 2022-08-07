@@ -1,8 +1,8 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './PageTitle.module.scss'
 
-type PageTitleProps ={
-  titleText:string
+type PageTitleProps = {
+  titleText: string
 }
 
 export const PageTitle: FC<PageTitleProps> = ({titleText}) => {

@@ -1,6 +1,6 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './NavBlock.module.scss'
-import {NavItem} from "./navItem/NavItem";
+import {NavItem} from './navItem/NavItem'
 
 type NavBlockProps = {
   className: string

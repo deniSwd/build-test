@@ -1,11 +1,11 @@
 import React, {FC, useCallback, useEffect, useMemo, useRef, useState} from 'react'
 import s from './Work.module.scss'
-import {PageTitle} from "../../secondary/mainPageTitle/PageTitle"
-import {WorksType} from "../../../mainTypes"
-import {userAPI} from "../../../API/api"
-import {FilterMenu} from "./filterMenu/FilterMenu"
-import {StyleSwitcher} from "./styleSwitcher/StyleSwitcher"
-import {WorkContent} from "./workContent/WorkContent"
+import {PageTitle} from '../../secondary/mainPageTitle/PageTitle'
+import {WorksType} from '../../../mainTypes'
+import {userAPI} from '../../../API/api'
+import {FilterMenu} from './filterMenu/FilterMenu'
+import {StyleSwitcher} from './styleSwitcher/StyleSwitcher'
+import {WorkContent} from './workContent/WorkContent'
 
 export const Work: FC = () => {
 

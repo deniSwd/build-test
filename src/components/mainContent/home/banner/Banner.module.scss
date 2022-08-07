@@ -5,14 +5,17 @@
   grid-area: banner;
   justify-items: center;
   align-items: center;
-  .bannerImg{
+
+  .bannerImg {
     position: relative;
     display: flex;
+
     .bannerBackground {
       width: 100%;
       height: 100%;
       margin: auto;
     }
+
     .animateImg1, .animateImg2, .animateImg3 {
       position: absolute;
       bottom: -12%;
@@ -20,17 +23,17 @@
 
     .animateImg1 {
       height: calc(1vw * 13 + 35px);
-      right:15vw;
+      right: 15vw;
     }
 
     .animateImg2 {
       height: calc(1vw * 24 + 45px);
-      right:18vw;
+      right: 18vw;
     }
 
     .animateImg3 {
       height: calc(1vw * 19 + 45px);
-      right:28vw;
+      right: 28vw;
     }
   }
 
@@ -48,7 +51,6 @@
       padding: 0 10px;
       color: $gray;
       @include upperCaseSimpleText(12px);
-
     }
 
     .bannerButton {
@@ -57,11 +59,13 @@
     }
   }
 
-
   @media screen and (max-width: 480px) {
-    .bannerInfo  {
+    .bannerInfo {
       height: 200px;
-      p{@include upperCaseSimpleText(10px);}
+
+      p {
+        @include upperCaseSimpleText(10px);
+      }
     }
   }
 }

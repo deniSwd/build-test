@@ -1,10 +1,10 @@
-import {FC} from "react";
-import {Route, Routes} from "react-router-dom";
-import {Home} from "./mainContent/home/Home";
-import {About} from "./mainContent/about/About";
-import {Work} from "./mainContent/work/Work";
-import {Contacts} from "./mainContent/contacts/Contacts";
-import {ErrorPage} from "./secondary/error/ErrorPage";
+import {FC} from 'react'
+import {Route, Routes} from 'react-router-dom'
+import {Home} from './mainContent/home/Home'
+import {About} from './mainContent/about/About'
+import {Work} from './mainContent/work/Work'
+import {Contacts} from './mainContent/contacts/Contacts'
+import {ErrorPage} from './secondary/error/ErrorPage'
 
 export const RoutesPage:FC =()=> {
   return(

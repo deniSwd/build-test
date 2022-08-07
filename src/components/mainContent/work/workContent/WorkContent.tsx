@@ -1,7 +1,7 @@
-import React, {FC} from "react";
+import React, {FC} from 'react'
 import s from './WorkContent.module.scss'
-import InfiniteScroll from "react-infinite-scroll-component"
-import {WorksType} from "../../../../mainTypes";
+import InfiniteScroll from 'react-infinite-scroll-component'
+import {WorksType} from '../../../../mainTypes'
 
 type WorkContentProps = {
   nextFetch: (reset?: boolean) => void

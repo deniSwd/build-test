@@ -1,11 +1,11 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './Banner.module.scss'
 import bannerImg from '../../../../assets/banner-background.png'
 import iPhoneImg from '../../../../assets/iPhone.png'
 import iPadImg from '../../../../assets/iPad.png'
 import macbookImg from '../../../../assets/macbook.png'
-import {Button} from "../../../secondary/button/Button"
-import {useNavigate} from "react-router-dom"
+import {Button} from '../../../secondary/button/Button'
+import {useNavigate} from 'react-router-dom'
 
 export const Banner: FC = () => {
   const navigate = useNavigate()

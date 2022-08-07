@@ -1,7 +1,7 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './Images.module.scss'
-import {WorksType} from "../../../../../mainTypes";
-import cn from "classnames";
+import {WorksType} from '../../../../../mainTypes'
+import cn from 'classnames'
 
 type ImagesProps = {
   works: WorksType

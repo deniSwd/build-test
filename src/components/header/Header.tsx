@@ -1,9 +1,9 @@
 import React, {FC, useState} from 'react'
 import s from './Header.module.scss'
 import forButtonImg from '../../assets/actionMenuButton.png'
-import {LogoLink} from "./logoLink/LogoLink"
-import {NavBlock} from "../secondary/navBlock/NavBlock"
-import {ActionMenu} from "./actionMenu/ActionMenu"
+import {LogoLink} from './logoLink/LogoLink'
+import {NavBlock} from '../secondary/navBlock/NavBlock'
+import {ActionMenu} from './actionMenu/ActionMenu'
 
 export const Header: FC = () => {
   const [openMenu, setOpenMenu] = useState(false)

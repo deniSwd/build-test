@@ -1,7 +1,7 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 import {AppThunk, RootState} from './store'
-import {WorksType} from "../mainTypes"
-import {userAPI} from "../API/api";
+import {WorksType} from '../mainTypes'
+import {userAPI} from '../API/api'
 
 export interface WorksState {
   works: WorksType

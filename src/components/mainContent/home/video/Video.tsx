@@ -1,10 +1,10 @@
 import {FC} from "react"
 import s from './Video.module.scss'
 import playImg from '../../../../assets/play.png'
-import {useAppDispatch} from "../../../../store/hooks";
-import {createPopUp} from "../../../../store/popUpSlice";
-import {PopUpWrap} from "../../../secondary/popUp/PopUpWrap";
-import {VideoPopUp} from "../../../secondary/popUp/videoPopUp/VideoPopUp";
+import {useAppDispatch} from '../../../../store/hooks'
+import {createPopUp} from '../../../../store/popUpSlice'
+import {PopUpWrap} from '../../../secondary/popUp/PopUpWrap'
+import {VideoPopUp} from '../../../secondary/popUp/videoPopUp/VideoPopUp'
 
 export const Video: FC = () => {
   const dispatch = useAppDispatch()

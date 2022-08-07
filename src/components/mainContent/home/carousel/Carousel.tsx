@@ -1,10 +1,10 @@
-import {FC, useEffect, useMemo, useState} from "react"
+import {FC, useEffect, useMemo, useState} from 'react'
 import s from './Carousel.module.scss'
-import {useAppSelector} from "../../../../store/hooks";
-import {selectWorks} from "../../../../store/worksSlice";
-import {Title} from "./carouselTitle/Title";
-import {Images} from "./carouselImages/Images";
-import {Info} from "./carouselInfo/Info";
+import {useAppSelector} from '../../../../store/hooks'
+import {selectWorks} from '../../../../store/worksSlice'
+import {Title} from './carouselTitle/Title'
+import {Images} from './carouselImages/Images'
+import {Info} from './carouselInfo/Info'
 
 export const Carousel: FC = () => {
   const works = useAppSelector(selectWorks)

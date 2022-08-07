@@ -1,12 +1,12 @@
-import {FC} from "react"
+import {FC} from 'react'
 import s from './FooterInfo.module.scss'
-import {NavBlock} from "../../secondary/navBlock/NavBlock";
+import {NavBlock} from '../../secondary/navBlock/NavBlock'
 
 export const FooterInfo: FC = () => {
   return (
     <article className={s.footerInfo}>
       <div className={s.contentWrap}>
-        <p>COPYRIGHT 2013 DISPLAY. ALL RIGHTS RESERVED.</p>
+        <span>COPYRIGHT 2013 DISPLAY. ALL RIGHTS RESERVED.</span>
         <NavBlock className={s.footerNav} separator={'/'}/>
       </div>
     </article>
