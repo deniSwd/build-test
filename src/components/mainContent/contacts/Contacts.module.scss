@@ -7,6 +7,14 @@
 
     .googleMap {
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        @include upperCaseSimpleText(18px);
+        color: $darkgrey;
+      }
 
       .map {
         width: 100%;
@@ -40,6 +48,12 @@
         margin: 20px auto;
         grid-gap: 20px 0;
       }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .contactsContent {
+      grid-template-rows: 350px 1fr;
     }
   }
 }

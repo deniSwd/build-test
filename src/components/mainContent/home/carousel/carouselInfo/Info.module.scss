@@ -41,5 +41,15 @@
   }
   @media screen and (max-width: 480px) {
     grid-gap: 0 20px;
+    .info{
+      h3{
+        color: $gray;
+        margin-bottom: 0;
+        @include upperCaseSimpleText(16px);
+      }
+      p{
+        display: none;
+      }
+    }
   }
 }

@@ -20,17 +20,17 @@
 
     .animateImg1 {
       height: calc(1vw * 13 + 35px);
-      right:18%;
+      right:15vw;
     }
 
     .animateImg2 {
       height: calc(1vw * 24 + 45px);
-      right:20%;
+      right:18vw;
     }
 
     .animateImg3 {
       height: calc(1vw * 19 + 45px);
-      right:30%;
+      right:28vw;
     }
   }
 
@@ -59,8 +59,9 @@
 
 
   @media screen and (max-width: 480px) {
-    .bannerInfo p {
-      @include upperCaseSimpleText(10px);
+    .bannerInfo  {
+      height: 200px;
+      p{@include upperCaseSimpleText(10px);}
     }
   }
 }

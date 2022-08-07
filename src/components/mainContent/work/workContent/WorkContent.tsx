@@ -14,13 +14,13 @@ export const WorkContent: FC<WorkContentProps> = ({nextFetch, hasMore, displayin
   return (
     <InfiniteScroll next={nextFetch} hasMore={hasMore}
                     dataLength={displayingWorks.length}
-                    className={listStyle ? s.workMapList : s.workMapGrid} loader={<h4>Loading...</h4>}>
+                    className={listStyle ? s.workMapList : s.workMapGrid} loader={<h3>Loading...</h3>}>
       {displayingWorks.map((item, key) => <div key={key} className={s.workBox}>
         <img src={item.image} className={s.workImage} alt='work'/>
         {listStyle &&
             <div className={s.workDescription}>
                 <h2>{item.title}</h2>
-                <h4>{item.category}</h4>
+                <h3>{item.category}</h3>
                 <p>{item.description}</p>
             </div>}
       </div>)}
