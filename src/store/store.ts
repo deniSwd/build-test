@@ -1,11 +1,9 @@
 import {Action, configureStore, ThunkAction} from '@reduxjs/toolkit'
-import mainReducer from './mainSlice'
 import worksReducer from './worksSlice'
 import popUpReducer from './popUpSlice'
 
 export const store = configureStore({
   reducer: {
-    main: mainReducer,
     popUps: popUpReducer,
     works: worksReducer
   },
